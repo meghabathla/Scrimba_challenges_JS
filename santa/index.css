@@ -1,0 +1,205 @@
+html,
+body {
+  margin: 0;
+}
+
+body {
+  width: 360px;
+  height: 100vh;
+  background: repeating-linear-gradient(
+    -45deg,
+    /* Diagonal direction */ #2c3e2e,
+    /* Dark green color */ #2c3e2e 50px,
+    /* End dark green at 50px */ #3c3c3c 50px,
+    /* Start gray immediately */ #3c3c3c 100px /* End gray at 100px */
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.santa {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.face {
+  position: absolute;
+  background-color: bisque;
+  border-radius: 40%;
+  width: 105px;
+  height: 140px;
+  top: 50px;
+  left: 50px;
+}
+.hat {
+  background-color: red;
+  width: 110px;
+  height: 60px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 10px;
+  position: absolute;
+  left: 42px;
+}
+.hat-band {
+  background-color: #dadada;
+  width: 126px;
+  height: 30px;
+  position: absolute;
+  top: 35px;
+  left: 40px;
+  z-index: 2;
+  border-radius: 10px;
+}
+.pom-pom {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 150px;
+}
+.ear {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  position: relative;
+}
+.ear-left {
+  background-color: white;
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  top: 60px;
+  left: 42px;
+}
+.ear-right {
+  background-color: white;
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  top: 60px;
+  left: 100px;
+}
+.ear-brown {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  position: relative;
+}
+.ear-brown-left {
+  background-color: orange;
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  border-radius: 60%;
+  top: 80px;
+  left: 40px;
+}
+.ear-brown-right {
+  background-color: orange;
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  border-radius: 60%;
+  top: 80px;
+  left: 115px;
+}
+.beard {
+  background-color: white;
+  width: 120px;
+  height: 60px;
+  border-radius: 50px;
+  position: absolute;
+  top: 120px;
+  left: 40px;
+}
+.eyes {
+  background-color: #2c3c3c;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  left: 73px;
+  box-shadow: 40px 0 #2c3c3c; /* Two eyes */
+}
+.mouth {
+  background-color: black;
+  width: 40px;
+  height: 23px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  top: 140px;
+  left: 80px;
+  overflow: hidden;
+}
+.tongue {
+  background-color: red;
+  width: 28px;
+  height: 29px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 17px;
+}
+.beard {
+  position: absolute;
+  top: 120px;
+  left: 40px;
+}
+.beard-part {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+}
+.beard-part:nth-child(1) {
+  top: 0;
+  left: 20px;
+}
+.beard-part:nth-child(2) {
+  top: 20px;
+  left: 0;
+}
+.beard-part:nth-child(3) {
+  top: 20px;
+  left: 40px;
+}
+.beard-part:nth-child(4) {
+  top: 40px;
+  left: 20px;
+}
+
+/* Mustache */
+.mustache {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+.mustache-part {
+  background-color: #d1d1d1;
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  position: absolute;
+}
+.mustache-part:nth-child(1) {
+  left: 0;
+  transform: rotate(-10deg);
+}
+.mustache-part:nth-child(2) {
+  left: 40px;
+  transform: rotate(10deg);
+}
