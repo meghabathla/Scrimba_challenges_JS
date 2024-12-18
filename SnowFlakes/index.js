@@ -1,9 +1,28 @@
 const snowGlobe = document.querySelector(".snow-globe");
 
+function generateRandomNumber(min = 10, max = 30) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 function createSnowflake() {
   const snow = document.createElement("div");
   snow.classList.add("snowflake");
-  document.body.appendChild(snow);
+  snow.innerText = "❄️";
+
+  const size = `${generateRandomNumber(10, 30)}px`;
+  snow.style.fontSize = size;
+  const position = `${generateRandomNumber(0, 100)}%`;
+  snow.style.left = position;
+  const duration = `${generateRandomNumber(1000, 3000)}ms`;
+  snow.style.animationDuration = duration;
+  snowGlobe.appendChild(snow);
+
+  setTimeout(() => {
+    snow.classList.add("fall");
+  }, 0);
+  setTimeout(() => {
+    snow.remove();
+  }, 3000);
   /* 
 
 Challenge:

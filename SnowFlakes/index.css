@@ -43,9 +43,9 @@ body {
 }
 
 /* 
-  Challenge:
-  2.  Add CSS to position the snowflakes ❄️ and animation to make them fall.
-  */
+Challenge:
+2.  Add CSS to position the snowflakes ❄️ and animation to make them fall.
+*/
 
 .snowflake {
   position: absolute;
@@ -57,7 +57,10 @@ body {
 }
 
 @keyframes fall {
-  to {
-    transform: translateY(100vh);
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(500px);
   }
 }
