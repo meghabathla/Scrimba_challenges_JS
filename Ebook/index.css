@@ -1,0 +1,54 @@
+* {
+  --green: #024f1a;
+}
+
+img {
+  width: 200px;
+  top: 20px;
+  left: 10px;
+  position: absolute;
+}
+body {
+  position: relative;
+  background-color: var(--green);
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  left: 180px;
+  position: absolute;
+  font-size: 50px;
+}
+div {
+  color: white;
+  top: 110px;
+  left: 200px;
+  width: 230px;
+  position: absolute;
+  line-height: 30px;
+  text-align: center;
+}
+.para-section {
+  top: 240px;
+  color: black;
+  background-color: #b1bdb4;
+  left: 40px;
+  position: absolute;
+  z-index: 2;
+  width: 300px;
+  padding: 10px 40px;
+}
+/* p:nth-of-type(1) {
+    top: 240px;
+}
+
+p:nth-of-type(2) {
+    top: 280px;
+} */
+.para-heading {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  font-weight: bold;
+}
