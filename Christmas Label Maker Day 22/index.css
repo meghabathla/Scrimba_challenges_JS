@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+    padding: .5em;
+}
+
+.label { 
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
